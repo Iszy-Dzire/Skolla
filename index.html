@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skolla Marketplace Home Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#30360E",
+              "background-light": "#E2D4B9",
+              "background-dark": "#1d1f13","accent": "#787F56",
+              "highlight": "#4169E1",
+              "shadow-color": "#B0E0E6"
+            },
+            fontFamily: {
+              "display": ["Playfair Display", "serif"],"body": ["Lexend", "sans-serif"]},
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+            boxShadow: {
+              'neumorphic': '5px 5px 10px #c0b49f, -5px -5px 10px #fff4d3',
+              'neumorphic-sm': '3px 3px 6px #c0b49f, -3px -3px 6px #fff4d3',
+              'search': '0 4px 14px 0 rgba(176, 224, 230, 0.5)',
+              'fab': '0 6px 20px 0 rgba(0,0,0,0.2)'
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: "Playfair Display", serif;}.filter-bar-item {
+        transition: transform 0.2s ease-in-out;
+    }
+    .filter-bar-item:hover {
+        transform: scale(1.05);
+    }
+    .category-scroll-container::-webkit-scrollbar {
+        display: none;}
+    .category-scroll-container {
+        -ms-overflow-style: none;scrollbar-width: none;}
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display relative">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-col gap-2 p-4 pb-2">
+<div class="flex items-center h-12 justify-between">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-primary dark:text-gray-200 text-3xl">menu</span>
+</div>
+<p class="text-primary dark:text-gray-100 tracking-light text-[28px] font-extrabold leading-tight">Skolla</p>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-primary dark:text-gray-200 gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl">notifications</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pb-3 overflow-x-auto category-scroll-container px-4">
+<div class="flex gap-4 items-center justify-start py-2">
+<a class="flex items-center justify-center gap-2 p-2 rounded-full bg-white shadow-neumorphic-sm flex-shrink-0 filter-bar-item" href="#">
+<span class="material-symbols-outlined text-primary text-2xl">book</span>
+<p class="text-primary text-sm font-body leading-normal pr-1">Textbooks</p>
+</a>
+<a class="flex items-center justify-center gap-2 p-2 rounded-full bg-white shadow-neumorphic-sm flex-shrink-0 filter-bar-item" href="#">
+<span class="material-symbols-outlined text-primary text-2xl">chair</span>
+<p class="text-accent text-sm font-body leading-normal pr-1">Furniture</p>
+</a>
+<a class="flex items-center justify-center gap-2 p-2 rounded-full bg-white shadow-neumorphic-sm flex-shrink-0 filter-bar-item" href="#">
+<span class="material-symbols-outlined text-primary text-2xl">laptop_mac</span>
+<p class="text-accent text-sm font-body leading-normal pr-1">Electronics</p>
+</a>
+<a class="flex items-center justify-center gap-2 p-2 rounded-full bg-white shadow-neumorphic-sm flex-shrink-0 filter-bar-item" href="#">
+<span class="material-symbols-outlined text-primary text-2xl">table_lamp</span>
+<p class="text-accent text-sm font-body leading-normal pr-1">Dorm Decor</p>
+</a>
+<a class="flex items-center justify-center gap-2 p-2 rounded-full bg-white shadow-neumorphic-sm flex-shrink-0 filter-bar-item" href="#">
+<span class="material-symbols-outlined text-primary text-2xl">apparel</span>
+<p class="text-accent text-sm font-body leading-normal pr-1">Clothing</p>
+</a>
+<a class="flex items-center justify-center gap-2 p-2 rounded-full bg-white shadow-neumorphic-sm flex-shrink-0 filter-bar-item" href="#">
+<span class="material-symbols-outlined text-primary text-2xl">confirmation_number</span>
+<p class="text-accent text-sm font-body leading-normal pr-1">Tickets</p>
+</a>
+</div>
+</div>
+<div class="p-4">
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl pt-32 h-[200px]" data-alt="Promotional banner with abstract shapes" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJpK57X4_IS7OFbru2X0MDIEP7V5SLpO2kBjDBCIJLyjCEz1BgL31XLspTPeCgFmbgobF3AOjphwaB0d0fnqm5bSUuQZT9OJ1HqPEHTQACdZloxtKzb4WmTBScS2EvfaVMW3kxxmA0AIVPBgxj8ioPYf16rAd6EGoFy0vr6dOcrTK8JWQY12Z2Nwz9m-CJvfmKKh5Sf2NoZW2er7LesaFfQYZm0emGzrUgQhAuqlkH0f1UXTirDCmnsHFPtN3fRzbev2RNLc6SUGE");'>
+<div class="flex w-full items-end justify-between gap-4 p-4">
+<p class="text-white text-3xl font-extrabold leading-tight flex-1">End-of-Semester Textbook Sale!</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8 p-4">
+<div class="flex flex-col bg-white rounded-xl shadow-neumorphic w-full overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="A psychology textbook with a blue and white cover." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_1nFprcteSUoFwZGHajNuPYibaLE2L2bS-JXFHn3cu98WTgqr9fY3wwpmMcLxj4TekeOqcFmqB3jbpnFjbHmkITobNIAhU-z6sUQwLM1SCQr-Ti9ofvDrCKIuY7ekN7m8gS1qIhuRrOwnWi2rDv3I_rCnl71WhRL5jZPB_JYO4420-ZpeJvQXe6KOFk12YPKZgIwW1aHryAYUZxhJgd2gH0_ECJoTODGTmTviWSTFyW2yjkFZy3im-_aS3WxoTaDIavwEb1wZtyw");'></div>
+<div class="px-4 py-4">
+<p class="text-primary text-xl font-extrabold leading-snug">Psychology 101</p>
+<p class="text-highlight text-2xl font-black leading-tight mt-1">$45.00</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-xs font-medium text-primary bg-primary/20 px-2 py-0.5 rounded-full font-body">Used</span>
+</div>
+<p class="text-accent/80 text-base font-normal leading-normal mt-2 font-body">Main Campus Library</p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded-xl shadow-neumorphic w-full overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="A simple wooden desk chair against a plain background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3sr8SNmHmOyXwI4f7ELyTILKub_kaGBOe5SerGsLfQ0z-hY59fQ-5mirvYHgc0aYY0JEaSTYBUJIbtLnxuhcHXEtI67-e0c8S1qyYuyubRZkxC2kYibnBSCMavOWwz-5xkmv0g8Sqa1lNNxrH3rOV9Fvyd0bdp1Kh4DDqjk0A_xs0LZ_APqPyrJNXWeLI9ERk4lwEENllegD9I_x56RTYpx2EVbcfLQz48rCwZzL-lzSralWXZa3SU9zIMIKur6detrIDIH3Ft6Q");'></div>
+<div class="px-4 py-4">
+<p class="text-primary text-xl font-extrabold leading-snug">Wooden Desk Chair</p>
+<p class="text-highlight text-2xl font-black leading-tight mt-1">$25.00</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-xs font-medium text-primary bg-primary/20 px-2 py-0.5 rounded-full font-body">New</span>
+</div>
+<p class="text-accent/80 text-base font-normal leading-normal mt-2 font-body">South Dorm</p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded-xl shadow-neumorphic w-full overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="A pair of sleek, black noise-cancelling headphones." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPA9UywhnyquBQGTts9kxVG2uQf6r9p4MaMqdsqV6LaD0A25yeteHHiW_C213vXbGmcWlZCskPpd2KjylsXL3RSuPctX4FJjBY6hqxYjq_EqYD8e-0kBn9IRheVf5yTZx_V26OJjBkxjVQNcEohdqysQT-5R_eIMBNjC7LKjSTUSP2lI05EWcoOsqNHKiABjwiN6g82-GoICyQrsKNGKguDUX1jn-T0aQcO17eaOC8kZTmvvVpbL65OZOS_4d2P9qBj1BVfJScdyk");'></div>
+<div class="px-4 py-4">
+<p class="text-primary text-xl font-extrabold leading-snug">Noise-Cancelling Headphones</p>
+<p class="text-highlight text-2xl font-black leading-tight mt-1">$120.00</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-xs font-medium text-primary bg-primary/20 px-2 py-0.5 rounded-full font-body">Used</span>
+</div>
+<p class="text-accent/80 text-base font-normal leading-normal mt-2 font-body">Engineering Hall</p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded-xl shadow-neumorphic w-full overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="A vintage-style desk lamp with a brass finish." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEfB2FClZ4srbyhAGNDOHWF6JQse6lXei8bhXc1iEhQyUlFXQH9VUz9pR9zdYrsAcCIIXm6gg2Yx1jYB23G1w2Mf3oCC3GGz6T4ZWI4FfuwO7OTYwEH1gJRa52nl1sHSVXMOujsoVFChCjlvgBXP5B0TT5PhK81glqRUl_xTCi1Ki6v05anblE68Ose3Oj6eO2dRVIQSVou8RqNPfI-yrfIaAT7W7j0mrr2D6RnUJ117hrr3vVWwJGhTTiD0I4ZDYiTf7Al8t7tTY");'></div>
+<div class="px-4 py-4">
+<p class="text-primary text-xl font-extrabold leading-snug">Vintage Desk Lamp</p>
+<p class="text-highlight text-2xl font-black leading-tight mt-1">$30.00</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-xs font-medium text-primary bg-primary/20 px-2 py-0.5 rounded-full font-body">Used</span>
+</div>
+<p class="text-accent/80 text-base font-normal leading-normal mt-2 font-body">Arts Building</p>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-4 z-50">
+<button class="flex items-center justify-center size-14 rounded-full bg-highlight text-white shadow-fab">
+<span class="material-symbols-outlined text-3xl">search</span>
+</button>
+</div>
+</div>
+
+</body></html>
